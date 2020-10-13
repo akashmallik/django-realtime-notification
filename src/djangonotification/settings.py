@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'notifier'
+    'channels',
+    'notifier',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djangonotification.wsgi.application'
+ASGI_APPLICATION = "djangonotification.routing.application"
 
 
 # Database
